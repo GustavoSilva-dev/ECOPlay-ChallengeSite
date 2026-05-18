@@ -1,0 +1,263 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #D9D9D9;
+    color: #2C3952;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HERO SECTION SOBRE */
+.hero-sobre {
+    height: 400px;
+    animation: background-change 2s ease-in infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #5360FF, #6B46C1);
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero-mini-title {
+    font-family: 'Nico Moji', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    animation: slide-up 1s ease-out;
+}
+
+.hero-title-main {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    animation: slide-up 1s ease-out;
+}
+
+.hero-subtitle {
+    font-size: 3.5rem;
+    font-weight: 700;
+    animation: slide-up 1.2s ease-out;
+}
+
+.hero-content {
+    margin-top: 65px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.main-content-sobre {
+    flex: 1;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-container {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.proposta-intro {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto;
+    animation: fade-in 1.5s ease-out;
+}
+
+.proposta-intro .logo-body {
+    font-family: 'Nico Moji', sans-serif;
+    font-size: 5rem;
+    color: #2C3952;
+    margin-bottom: 25px;
+}
+
+.proposta-intro h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.proposta-intro p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.diferenciais-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.diferenciais-title {
+    animation: content-fade-in both;
+    animation-timeline: view();
+    animation-range: entry 5% exit 20%;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.card {
+    animation: content-fade-in both;
+    animation-timeline: view();
+    animation-range: entry 5% exit 20%;
+    border-radius: 12px;
+    padding: 30px;
+    color: #FFFFFF;
+    max-width: 85%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.card p:last-of-type {
+    margin-bottom: 0;
+}
+
+.card-azul-purple {
+    background: linear-gradient(135deg, #5360FF, #5A56E4);
+    align-self: flex-start;
+}
+
+.card-roxo-escuro {
+    background: linear-gradient(135deg, #6B46C1, #51329B);
+    align-self: flex-end;
+}
+
+
+@media (max-width: 768px) {
+    .hero-sobre {
+        padding: 60px 20px;
+    }
+
+    .hero-content {
+        margin-top: 105px;
+    }
+
+    .hero-title-main,
+    .hero-subtitle {
+        font-size: 1.9rem;
+    }
+
+    .main-content-sobre {
+        padding: 40px 20px;
+    }
+
+    .sobre-container {
+        gap: 45px;
+    }
+
+    .proposta-intro .logo-body {
+        font-size: 3.5rem;
+    }
+
+    .proposta-intro h3 {
+        font-size: 1.1rem;
+    }
+
+    .proposta-intro p {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+
+    .diferenciais-title {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        max-width: 100%;
+        align-self: center;
+        padding: 25px;
+    }
+
+    .card h4 {
+        font-size: 1.1rem;
+    }
+
+    .card p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 571px) {
+    .hero-content {
+        margin-top: 130px;
+    }
+}
+
+/* KEYFRAMES DE ANIMAÇÃO */
+@keyframes background-change {
+    0% {
+        background: linear-gradient(to bottom right, #5360FF, #6B46C1);
+    }
+
+    50% {
+        background: linear-gradient(to bottom right, #6B46C1, #5360FF);
+    }
+
+    100% {
+        background: linear-gradient(to bottom right, #5360FF, #6B46C1);
+    }
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes content-fade-in {
+    from {
+        opacity: 0.3;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
