@@ -129,7 +129,13 @@ body {
 
 @media (max-width: 768px) {
     .hero-faq {
+        height: 330px;
+        margin-top: 50px;
         padding: 60px 20px;
+    }
+
+    .hero-content {
+        margin-top: 45px;
     }
 
     .hero-title-main, .hero-subtitle {
@@ -153,6 +159,12 @@ body {
         padding: 20px;
         font-size: 0.9rem;
         text-align: left;
+    }
+}
+
+@media (max-width: 576px){
+    .hero-content {
+        margin-top: 90px;
     }
 }
 
