@@ -1,0 +1,269 @@
+@font-face {
+    font-family: 'Nico Moji';
+    src: url('./fontes/NicoMoji-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #D9D9D9;
+    color: #2C3952;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HERO SECTION CONTATO */
+.hero-contato {
+    height: 400px;
+    animation: background-change 2s ease-in infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #5360FF, #6B46C1);
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero-content {
+    margin-top: 65px;
+}
+
+.hero-mini-title {
+    font-family: 'Nico Moji', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    animation: slide-up 1s ease-out;
+}
+
+.hero-title-main {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    animation: slide-up 1s ease-out;
+}
+
+.hero-subtitle {
+    font-size: 3.5rem;
+    font-weight: 700;
+    animation: slide-up 1.2s ease-out;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.main-content-contato {
+    flex: 1;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato-container {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* CONTAINER DE FOTOS */
+.integrantes-avatar-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.integrantes-avatar-group .avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.integrantes-avatar-group .avatar:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.integrantes-avatar-group .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contato-container .logo-body {
+    font-family: 'Nico Moji', sans-serif;
+    font-size: 5rem;
+    color: #2C3952;
+    margin-bottom: 15px;
+}
+
+.contato-intro-text {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #2C3952;
+    margin-bottom: 40px;
+}
+
+/* CARD BRANCO DE EMAIL */
+.contact-card {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 40px 35px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email-main-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.icon-at {
+    font-size: 2.5rem;
+    color: #2C3952;
+    font-weight: 600;
+}
+
+.main-email {
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    color: #2C3952;
+}
+
+.subtitle-emails {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2C3952;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+/* BLOCO VERDE DOS INTEGRANTES */
+.emails-list-box {
+    background-color: #2D9B67; 
+    border-radius: 16px;
+    padding: 25px 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: left;
+}
+
+.email-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-at-list {
+    font-size: 1.4rem;
+    color: #FFFFFF;
+}
+
+.email-text {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    word-break: break-all;
+}
+
+.email-main-row .email-text {
+    color: #2C3952;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        margin-top: 105px;
+    }
+
+    .hero-title-main,
+    .hero-subtitle {
+        font-size: 1.9rem;
+    }
+
+    .hero-title-main, .hero-subtitle {
+        font-size: 1.9rem;
+    }
+
+    .main-content-contato {
+        padding: 40px 15px;
+    }
+
+    .contato-container .logo-body {
+        font-size: 3.5rem;
+    }
+
+    .contato-intro-text {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .contact-card {
+        padding: 30px 20px;
+    }
+
+    .main-email {
+        font-size: 1.15rem;
+    }
+
+    .icon-at {
+        font-size: 1.5rem;
+    }
+
+    .subtitle-emails {
+        font-size: 1rem;
+    }
+
+    .emails-list-box {
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+    .email-text {
+        font-size: 0.88rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content {
+        margin-top: 130px;
+    }
+}
+
+/* KEYFRAMES */
+@keyframes background-change {
+    0% { background: linear-gradient(to bottom right, #5360FF, #6B46C1); }
+    50% { background: linear-gradient(to bottom right, #6B46C1, #5360FF); }
+    100% { background: linear-gradient(to bottom right, #5360FF, #6B46C1); }
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
