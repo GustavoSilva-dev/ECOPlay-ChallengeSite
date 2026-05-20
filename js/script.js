@@ -1,3 +1,4 @@
+// Script para funcionalidade das FAQs
 document.addEventListener('DOMContentLoaded', () => {
     const faqQuestions = document.querySelectorAll('.faq-question');
 
@@ -19,5 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 faqAnswer.style.maxHeight = faqAnswer.scrollHeight + "px";
             }
         });
+    });
+});
+
+// Script para funcionalidade do menu mobile
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuMobile = document.querySelector('.mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+        menuMobile.classList.toggle('closed');
     });
 });
