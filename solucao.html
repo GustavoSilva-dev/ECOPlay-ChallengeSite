@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOPlay - Entendendo a Solução!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/style-solucao.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo-nav">EP</div>
+            <nav class="nav-menu">
+                <a href="index.html">Página Inicial</a>
+                <a href="quem-somos.html">Quem Somos?</a>
+                <a href="solucao.html" class="active">Solução</a>
+                <a href="fluxograma.html">Fluxograma</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+                <a href="faq.html">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-solucao">
+        <div class="hero-content">
+            <p class="hero-mini-title">ECOPlay</p>
+            <h1 class="hero-title-main">Entendendo a Solução!</h1>
+            <p class="hero-subtitle">Aprofundando a ideia</p>
+        </div>
+    </section>
+
+    <main class="main-content-solucao">
+        <div class="solucao-container">
+            <section class="solucao-intro">
+                <h2 class="logo-body">ECOPlay</h2>
+                <h3>A estrutura da solução</h3>
+                <br>
+                <p>A ECOPlay é uma plataforma integrada de gamificação desenhada sob medida para o ecossistema
+                    SoulUp/Prospera. Nosso objetivo é transformar ações ecológicas isoladas em um hábito diário
+                    divertido, altamente competitivo e financeiramente recompensador.</p>
+                <br>
+                <p>Através de dinâmicas baseadas em geolocalização, dividimos as cidades em Guildas (bairros ou
+                    condomínios), estimulando o espírito de comunidade. No ecossistema ECOPlay, o usuário joga para
+                    ajudar o planeta, ganha prêmios individuais através de Lootboxes, compete em dinâmicas aceleradas de
+                    Pontos Privados (PV) e, ao final, converte seus esforços em descontos reais na conta de luz via
+                    Prospera ou em produtos no comércio da sua região.</p>
+            </section>
+
+            <section class="engenharia-section">
+                <div class="engenharia-title">
+                    <img src="./assets/imagens/engrenagem-icone.png" alt="">
+                    <h1>Engenharia e Tecnologia: O que há por trás do jogo?</h1>
+                    <br>
+                    <p>Para construir uma solução escalável, segura e focada em uma excelente experiência de produto,
+                        planejamos uma arquitetura tecnológica robusta dividida em três pilares principais:</p>
+                </div>
+
+                <br>
+
+                <div class="topico">
+                    <h3>1. Inteligência Artificial e Arquitetura de Backend Híbrida</h3>
+                    <br>
+                    <p><span>O que faz:</span> Analisa de forma preliminar os posts e imagens enviados pelos usuários,
+                        além de cuidar da segurança e das requisições do projeto. Toda a inteligência e as regras de
+                        negócio do ecossistema rodam de forma dividida e especializada para garantir a máxima
+                        performance da plataforma.</p>
+                    <br>
+                    <p><span>Tecnologias:</span> O núcleo principal do sistema será desenvolvido em <span>Spring Boot
+                            (Java)</span>, framework responsável por garantir a robustez do ecossistema, a segurança das
+                        requisições e a conexão escalável com o banco de dados. Em paralelo, serviços em
+                        <span>Python</span> rodam exclusivamente para cuidar da Inteligência Artificial do projeto,
+                        consumindo e processando APIs de visão computacional de forma assíncrona para que o sistema
+                        nunca trave.</p>
+                </div>
+
+                <br>
+
+                <div class="topico">
+                    <h3>2. Motor de Gamificação e Banco de Dados Escalável</h3>
+                    <br>
+                    <p><span>O que faz:</span> Controla a distribuição de pontos, atualização do ranking de Guildas em
+                        tempo real, lógica de distribuição de Lootboxes diárias e o sistema de "corrida" pelos Pontos
+                        Privados (PV).</p>
+                    <br>
+                    <p><span>Tecnologias:</span> Banco de dados relacional e de alta performance
+                        <span>(PostgreSQL/MySQL)</span> gerenciado com máxima estabilidade através do <span>Spring Data
+                            JPA</span> para permitir um sistema de ranking eficiente.</p>
+                </div>
+
+                <br>
+
+                <div class="topico">
+                    <h3>3. Frontend Web e Mobile: Interface Responsiva e Fluida (Requisito SoulUp)</h3>
+                    <br>
+                    <p><span>O que faz:</span> Toda a camada visual com a qual os usuários (membros das guildas) e os
+                        comerciantes parceiros interagem, garantindo uma navegação intuitiva nas missões, rankings,
+                        mapas e painéis de validação.</p>
+                    <br>
+                    <p><span>Tecnologias:</span> A interface do ecossistema será desenvolvida utilizando
+                        <span>React</span>, atendendo rigorosamente às especificações e diretrizes técnicas obrigatórias
+                        estabelecidas pela Soul Up. A escolha do framework garante componentes reutilizáveis, excelente
+                        performance na atualização do feed de missões e uma experiência altamente fluida e responsiva em
+                        qualquer dispositivo.</p>
+                </div>
+            </section>
+
+            <section class="validacao-section">
+                <img src="./assets/imagens/business-icon.png" alt="">
+                <h1>O Diferencial de Negócio: Parceria B2B e Validação Direta</h1>
+                <br>
+                <p>O grande diferencial de engenharia de processos da ECOPlay é o Painel do Comerciante. Em vez de
+                    sobrecarregar os servidores tentando validar tudo via robôs, nós integramos o lojista local ao
+                    ecossistema.</p>
+                <br>
+                <h3>Como funciona?</h3>
+                <br>
+                <p>O comerciante assina um plano pago para anunciar missões em sua loja física. Quando o usuário vai até
+                    lá e cumpre o desafio, o próprio lojista valida a ação no sistema.</p>
+                <br>
+                <h3>O Resultado</h3>
+                <br>
+                <p>A integração direta com os comerciantes parceiros resulta em uma validação mais precisa e rápida dos
+                    desafios, aumentando a confiança dos usuários e a eficiência operacional da plataforma.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; ECOPlay - 2026 - Gamificando ações sustentáveis</p>
+    </footer>
+</body>
+
+</html>

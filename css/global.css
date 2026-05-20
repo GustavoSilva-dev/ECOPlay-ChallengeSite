@@ -69,6 +69,10 @@
     font-size: 0.85rem;
 }
 
+.footer p {
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .nav-container {
         flex-direction: column;

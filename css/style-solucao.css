@@ -1,0 +1,266 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #D9D9D9;
+    color: #2C3952;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+span {
+    font-weight: 600;
+}
+
+/* HERO SECTION SOLUCAO */
+.hero-solucao {
+    height: 400px;
+    animation: background-change 2s ease-in infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #5360FF, #6B46C1);
+    padding: 160px 20px 100px 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero-mini-title {
+    text-align: center;
+    font-family: 'Nico Moji', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    animation: slide-up 1s ease-out;
+}
+
+.hero-title-main {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    animation: slide-up 1s ease-out;
+}
+
+.hero-subtitle {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    animation: slide-up 1.2s ease-out;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.main-content-solucao {
+    flex: 1;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.solucao-container {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.solucao-intro {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto;
+    animation: fade-in 1.5s ease-out;
+}
+
+.solucao-intro h3 {
+    font-size: 1.4rem;
+}
+
+.solucao-intro p {
+    font-size: 1.1rem;
+}
+
+.solucao-intro h3,
+p {
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.solucao-intro .logo-body {
+    font-family: 'Nico Moji', sans-serif;
+    font-size: 5rem;
+    color: #2C3952;
+    margin-bottom: 25px;
+}
+
+/* ENGENHARIA SECTION */
+.engenharia-section {
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+}
+
+.engenharia-title {
+    animation: content-fade-in both;
+    animation-timeline: view();
+    animation-range: entry 5% exit 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.engenharia-section img {
+    animation: rotate 3s linear infinite;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 50px;
+    margin-bottom: 40px;
+}
+
+.engenharia-section h1 {
+    text-align: center;
+}
+
+.topico {
+    animation: content-fade-in both;
+    animation-timeline: view();
+    animation-range: entry 5% exit 20%;
+}
+
+.topico h3 {
+    text-align: center;
+}
+
+/* VALIDACAO SECTION */
+.validacao-section {
+    animation: content-fade-in both;
+    animation-timeline: view();
+    animation-range: entry 5% exit 20%;
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+}
+
+.validacao-section img {
+    animation: move 2s linear infinite;
+    width: 50px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    align-self: center;
+}
+
+.validacao-section h1,
+h3 {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .logo-body {
+        font-size: 3rem !important;
+    }
+
+    .hero-content {
+        margin-top: 45px;
+    }
+
+    .hero-title-main,
+    .hero-subtitle {
+        font-size: 1.9rem !important;
+    }
+
+    .main-content-solucao {
+        padding: 50px 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.95rem !important;
+    }
+}
+
+/* KEYFRAMES */
+@keyframes background-change {
+    0% {
+        background: linear-gradient(to bottom right, #5360FF, #6B46C1);
+    }
+
+    50% {
+        background: linear-gradient(to bottom right, #6B46C1, #5360FF);
+    }
+
+    100% {
+        background: linear-gradient(to bottom right, #5360FF, #6B46C1);
+    }
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(20px);
+    }
+
+    50% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        transform: translateX(20px);
+    }
+}
+
+@keyframes content-fade-in {
+    from {
+        opacity: 0.3;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
