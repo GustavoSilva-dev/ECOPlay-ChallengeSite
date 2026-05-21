@@ -195,7 +195,7 @@ a {
   right: 20px;
   padding: 10px 15px;
   font-size: 18px;
-  background-color: blueviolet;
+  background-color: #38A169;
   color: white;
   border: none;
   border-radius: 20px;
@@ -205,5 +205,5 @@ a {
 }
 
 #voltar:hover {
-  background-color: #4b0082;
+  background-color: #6B46C1;
 }
