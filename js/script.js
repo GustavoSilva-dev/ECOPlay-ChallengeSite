@@ -1,7 +1,7 @@
 // Script para funcionalidade das FAQs
 document.addEventListener('DOMContentLoaded', () => {
     const faqQuestions = document.querySelectorAll('.faq-question');
-
+    
     faqQuestions.forEach(question => {
         question.addEventListener('click', function() {
             const faqItem = this.parentElement;

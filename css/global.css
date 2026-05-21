@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* NAVBAR OU HEADER SECTION */
 .navbar {
     width: 100vw;
