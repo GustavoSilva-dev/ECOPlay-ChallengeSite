@@ -132,6 +132,32 @@ body {
     margin: 0;
 }
 
+@media(max-width: 768px) {
+    .hero-title-main {
+        font-size: 1.9rem;
+    }   
+
+    .hero-subtitle {
+        font-size: 1.9rem;
+    }
+
+    .logo-body {
+        font-size: 3rem;
+    }
+
+    .fluxograma-intro-title {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+}
+
 /* KEYFRAMES */
 @keyframes background-change {
     0% {
