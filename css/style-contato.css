@@ -192,10 +192,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .hero-content {
-        margin-top: 105px;
-    }
-
     .hero-title-main,
     .hero-subtitle {
         font-size: 1.9rem;
@@ -241,12 +237,6 @@ body {
 
     .email-text {
         font-size: 0.88rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .hero-content {
-        margin-top: 130px;
     }
 }
 

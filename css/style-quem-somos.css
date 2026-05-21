@@ -116,10 +116,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .hero-content {
-        margin-top: 45px;
-    }
-
     .hero-title-main,
     .hero-subtitle {
         font-size: 1.9rem;
@@ -153,12 +149,6 @@ body {
     .integrante-info p {
         font-size: 0.95rem;
         text-align: center;
-    }
-}
-
-@media (max-width: 571px) {
-    .hero-content {
-        margin-top: 70px;
     }
 }
 

@@ -62,7 +62,7 @@ body {
     color: #2C3952;
 }
 
-.accordion-wrapper {
+.accordion {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -119,6 +119,14 @@ body {
     text-align: justify;
 }
 
+.active {
+    font-weight: 500 !important;
+}
+
+.faq-item .faq-answer {
+    font-weight: 500;
+}
+
 .faq-item.active .faq-question {
     background-color: #FFFFFF;
 }
@@ -132,10 +140,6 @@ body {
         height: 330px;
         margin-top: 50px;
         padding: 60px 20px;
-    }
-
-    .hero-content {
-        margin-top: 45px;
     }
 
     .hero-title-main, .hero-subtitle {
@@ -159,12 +163,6 @@ body {
         padding: 20px;
         font-size: 0.9rem;
         text-align: left;
-    }
-}
-
-@media (max-width: 576px){
-    .hero-content {
-        margin-top: 90px;
     }
 }
 

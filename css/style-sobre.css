@@ -158,10 +158,6 @@ body {
         padding: 60px 20px;
     }
 
-    .hero-content {
-        margin-top: 105px;
-    }
-
     .hero-title-main,
     .hero-subtitle {
         font-size: 1.9rem;
@@ -204,12 +200,6 @@ body {
 
     .card p {
         font-size: 0.95rem;
-    }
-}
-
-@media (max-width: 571px) {
-    .hero-content {
-        margin-top: 130px;
     }
 }
 
