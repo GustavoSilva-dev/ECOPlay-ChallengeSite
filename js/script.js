@@ -32,3 +32,20 @@ document.addEventListener('DOMContentLoaded', () => {
         menuMobile.classList.toggle('closed');
     });
 });
+
+const btnTop = document.querySelector("#voltar")
+
+window.onscroll = function() {
+  if (window.scrollY > 300) {
+    btnTop.style.display = "block"
+  } else {
+    btnTop.style.display = "none"
+  }
+}
+
+btnTop.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+})
