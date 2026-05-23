@@ -13,11 +13,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(to right, #5360FF, #6B46C1);
     padding: 60px 120px;
     height: 600px;
     text-align: center;
     color: #FFFFFF;
+    z-index: 1;
 }
 
 .logo-main {
@@ -160,13 +160,16 @@ body {
 
 @keyframes background-change {
     0% {
-        background: linear-gradient(to right, #5360FF, #6B46C1);
+        background: linear-gradient(to bottom right, #5361ffe0, #6B46C1e0),
+        url('../assets/imagens/background.gif') center / cover no-repeat;
     }
     50% {
-        background: linear-gradient(to right, #6B46C1, #5360FF);
+        background: linear-gradient(to bottom right, #6B46C1e0, #5361ffe0),
+         url('../assets/imagens/background.gif') center / cover no-repeat;
     }
     100% {
-        background: linear-gradient(to right, #5360FF, #6B46C1);
+        background: linear-gradient(to bottom right, #5361ffe0, #6B46C1e0),
+         url('../assets/imagens/background.gif') center / cover no-repeat;
     }
 }
 

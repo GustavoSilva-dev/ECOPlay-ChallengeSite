@@ -7,6 +7,7 @@ body {
     min-height: 100vh;
 }
 
+/* HERO SECTION FAQ */
 .hero-faq {
     animation: background-change 2s ease-in infinite;
     display: flex;
@@ -40,7 +41,9 @@ body {
     animation: slide-up 1.2s ease-out;
 }
 
+/* MAIN CONTENT FAQ */
 .main-content-faq {
+    animation: fade-in 1s ease-out;
     flex: 1;
     padding: 60px 20px;
     display: flex;
@@ -168,14 +171,27 @@ body {
 
 /* KEYFRAMES */
 @keyframes background-change {
-    0% { 
-        background: linear-gradient(to bottom right, #5360FF, #6B46C1); 
+    0% {
+        background: linear-gradient(to bottom right, #5361ffe0, #6B46C1e0),
+        url('../assets/imagens/background.gif') center / 100% no-repeat;
     }
     50% {
-        background: linear-gradient(to bottom right, #6B46C1, #5360FF); 
+        background: linear-gradient(to bottom right, #6B46C1e0, #5361ffe0),
+         url('../assets/imagens/background.gif') center / 100% no-repeat;
     }
     100% {
-        background: linear-gradient(to bottom right, #5360FF, #6B46C1); 
+        background: linear-gradient(to bottom right, #5361ffe0, #6B46C1e0),
+         url('../assets/imagens/background.gif') center / 100% no-repeat;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
 

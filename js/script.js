@@ -33,6 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
+// Script para funcionalidade do botão "Voltar ao Topo"
 const btnTop = document.querySelector("#voltar")
 
 window.onscroll = function() {

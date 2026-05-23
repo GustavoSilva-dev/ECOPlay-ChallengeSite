@@ -1,10 +1,3 @@
-@font-face {
-    font-family: 'Nico Moji';
-    src: url('./fontes/NicoMoji-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -60,6 +53,7 @@ body {
 
 /* CONTEÚDO PRINCIPAL */
 .main-content-contato {
+    animation: fade-in 1s ease-out;
     flex: 1;
     padding: 60px 20px;
     display: flex;
@@ -242,9 +236,28 @@ body {
 
 /* KEYFRAMES */
 @keyframes background-change {
-    0% { background: linear-gradient(to bottom right, #5360FF, #6B46C1); }
-    50% { background: linear-gradient(to bottom right, #6B46C1, #5360FF); }
-    100% { background: linear-gradient(to bottom right, #5360FF, #6B46C1); }
+    0% {
+        background: linear-gradient(to bottom right, #5361ffe0, #6B46C1e0),
+        url('../assets/imagens/background.gif') center / 100% no-repeat;
+    }
+    50% {
+        background: linear-gradient(to bottom right, #6B46C1e0, #5361ffe0),
+         url('../assets/imagens/background.gif') center / 100% no-repeat;
+    }
+    100% {
+        background: linear-gradient(to bottom right, #5361ffe0, #6B46C1e0),
+         url('../assets/imagens/background.gif') center / 100% no-repeat;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slide-up {

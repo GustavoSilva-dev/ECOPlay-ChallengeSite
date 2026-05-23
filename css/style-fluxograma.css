@@ -161,15 +161,16 @@ body {
 /* KEYFRAMES */
 @keyframes background-change {
     0% {
-        background: linear-gradient(to bottom right, #5360FF, #6B46C1);
+        background: linear-gradient(to bottom right, #5361ffe0, #6B46C1e0),
+        url('../assets/imagens/background.gif') center / 100% no-repeat;
     }
-
     50% {
-        background: linear-gradient(to bottom right, #6B46C1, #5360FF);
+        background: linear-gradient(to bottom right, #6B46C1e0, #5361ffe0),
+         url('../assets/imagens/background.gif') center / 100% no-repeat;
     }
-
     100% {
-        background: linear-gradient(to bottom right, #5360FF, #6B46C1);
+        background: linear-gradient(to bottom right, #5361ffe0, #6B46C1e0),
+         url('../assets/imagens/background.gif') center / 100% no-repeat;
     }
 }
 
